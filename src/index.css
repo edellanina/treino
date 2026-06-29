@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@theme {
+  --color-night-50: #e2e8f0;
+  --color-night-100: #cbd5e1;
+  --color-night-200: #94a3b8;
+  --color-night-300: #64748b;
+  --color-night-400: #475569;
+  --color-night-500: #334155;
+  --color-night-600: #1e293b;
+  --color-night-700: #1a1a2e;
+  --color-night-800: #131320;
+  --color-night-900: #08080f;
+
+  --color-neon: #00d9ff;
+  --color-neon-glow: #00d9ff80;
+  --color-emerald: #10b981;
+  --color-amber: #f59e0b;
+  --color-red: #ef4444;
+
+  --font-display: 'Syne', sans-serif;
+  --font-body: 'DM Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
+}
+
+/* Scrollbar fina e escura */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-night-500);
+  border-radius: 999px;
+}
+
+/* Glow utility */
+.glow-neon {
+  box-shadow: 0 0 12px var(--color-neon-glow);
+}
+.glow-red {
+  box-shadow: 0 0 12px #ef444480;
+}
+.glow-amber {
+  box-shadow: 0 0 12px #f59e0b80;
+}
+.glow-emerald {
+  box-shadow: 0 0 12px #10b98180;
+}
+
+/* Gradiente animado para o header */
+.header-glow {
+  background: linear-gradient(135deg, #131320 0%, #1a1a2e 100%);
+  border-bottom: 1px solid #1e1e32;
+}
+
+/* Touch feedback */
+.no-tap-highlight {
+  -webkit-tap-highlight-color: transparent;
+}
