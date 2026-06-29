@@ -18,7 +18,8 @@ export default defineConfig({
         background_color: '#08080f',
         display: 'standalone',
         orientation: 'portrait',
-        start_url: '/',
+        start_url: '/treino/',
+        scope: '/treino/',
         icons: [
           {
             src: 'favicon.svg',
